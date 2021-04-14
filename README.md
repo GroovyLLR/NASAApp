@@ -47,8 +47,11 @@ The project is base on MVVM architecture using RxSwift frameworks
   - class contains Codable object use to map response for fecthItem into appropriate objects
   - Improvement: Should have been able to provide basic cache for faster loading at application start
   - Improvement: May be i should have use dabase instead
-15. SCREEN/..
-  - Contains the UIViewController, together with their viewModel , UITableViewCell, tableview cell viewModels
+15. SCREEN/NASAItemListViewScreen
+  - Contains the UIViewController,viewcontroller's viewModel , UITableViewCell, tableview cell viewModels for list Items
+  -  SCREEN/NASAItemListViewController
+  16. SCREEN/NASAItemDetailViewScreen
+   - Contains the UIViewController, viewcontroller's viewModel for ttem details
   
   
 ### None issues:
