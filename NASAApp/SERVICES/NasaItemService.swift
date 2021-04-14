@@ -62,35 +62,7 @@ class NasaItemService: NasaItemServiceProtocol {
     }
     
     
-    private func parseData(_ data: Data?) -> ([NasaItem], String?){
-        guard let data = data else {
-            return ([], nil)
-        }
-        
-        do{
-            let response = try JSONDecoder().decode(NASAItemsReponse.self, from: data)
-            return (response.allItems(), response.collection?.nextUrl)
-            
-            
-        }catch{
-            return ([], nil)
-        }
-    }
     
-    private func parseImageCollection(_ data: Data?) -> String?{
-        guard let data = data else {
-            return nil
-        }
-        do {
-            if let results = try JSONSerialization.jsonObject(with: data, options: []) as? [String] {
-                return results.first(where: {$0.contains("~orig")}) ?? results.first(where: {$0.contains("~large")})
-            }else{
-                return nil
-            }
-        } catch  {
-            return nil
-        }
-    }
     
 }
 

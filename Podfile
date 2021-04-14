@@ -9,3 +9,13 @@ target 'NASAApp' do
   pod 'RxSwift'
   pod 'RxCocoa'
 end
+
+
+target 'NASAAppTests' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for NASAApp
+  pod 'RxSwift'
+  pod 'RxCocoa'
+end

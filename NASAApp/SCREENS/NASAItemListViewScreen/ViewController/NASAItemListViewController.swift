@@ -12,7 +12,14 @@ import RxCocoa
 class NASAItemListViewController: UIViewController {
 
     @IBOutlet var nasaItemTableview: UITableView!
-    @IBOutlet var activityIndicatorView: UIActivityIndicatorView!
+    
+    lazy var activityIndicatorView: UIActivityIndicatorView = {
+        let indicatorView = UIActivityIndicatorView.init(style: UIActivityIndicatorView.Style.medium)
+        indicatorView.tintColor = UIColor.hex("#6A717D", alpha: 1.0)
+        indicatorView.backgroundColor = UIColor.clear
+        indicatorView.isHidden = false
+        return indicatorView
+    }()
     
     lazy var header: UIView = {
         let v = UIView.init(frame: CGRect.init(origin: CGPoint.zero, size: CGSize.init(width: view.frame.size.width, height: 24)))
@@ -49,7 +56,7 @@ class NASAItemListViewController: UIViewController {
     
     private func bindActivityIndicatorView(){
         viewModel.isLoading.observe(on: MainScheduler.instance).bind(to: activityIndicatorView.rx.isAnimating).disposed(by: disposeBag)
-        viewModel.isLoading.observe(on: MainScheduler.instance).map{ $0 ? 1 : 0}.bind(to: activityIndicatorView.rx.alpha).disposed(by: disposeBag)
+        viewModel.isLoading.observe(on: MainScheduler.instance).map{ $0 ? 1 : 1}.bind(to: activityIndicatorView.rx.alpha).disposed(by: disposeBag)
         viewModel.isLoading.observe(on: MainScheduler.instance).map{ $0 ? StyleGuide.getNavBarBackgroundColor() : UIColor.white}.bind(to: header.rx.backgroundColor).disposed(by: disposeBag)
     }
     
@@ -117,6 +124,8 @@ extension NASAItemListViewController {
     private func setUpUI(){
         setUpNavBar()
         setUpNasaItemTableView()
+        setUpAcitivityIndicatorView()
+        view.layoutIfNeeded()
     }
     
     private func setUpNasaItemTableView(){
@@ -126,7 +135,15 @@ extension NASAItemListViewController {
         nasaItemTableview.estimatedRowHeight = 64
         nasaItemTableview.contentInset.bottom = (UIApplication.shared.delegate as? AppDelegate)?.window?.safeAreaInsets.bottom ?? 0
         nasaItemTableview.tableHeaderView = header
-        
+    }
+    
+    private func setUpAcitivityIndicatorView(){
+        view.addSubview(activityIndicatorView)
+        activityIndicatorView.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicatorView.widthAnchor.constraint(equalToConstant: 35).isActive = true
+        activityIndicatorView.heightAnchor.constraint(equalToConstant: 35).isActive = true
+        activityIndicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -((UIApplication.shared.delegate as? AppDelegate)?.window?.safeAreaInsets.top ?? 0)).isActive = true
+        activityIndicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     }
     
     private func setUpNavBar(){

@@ -20,26 +20,18 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="E3g-sd-lQ4">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3Re-uh-rQp" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="1CQ-SJ-1v0"/>
-                            <constraint firstItem="E3g-sd-lQ4" firstAttribute="leading" secondItem="3Re-uh-rQp" secondAttribute="leading" id="6w8-sD-HZG"/>
-                            <constraint firstItem="3Re-uh-rQp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KGY-er-EbO"/>
-                            <constraint firstItem="3Re-uh-rQp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Pgo-t5-k8T"/>
-                            <constraint firstItem="E3g-sd-lQ4" firstAttribute="trailing" secondItem="3Re-uh-rQp" secondAttribute="trailing" id="Thy-H0-b6R"/>
-                            <constraint firstItem="3Re-uh-rQp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gSE-nM-vAJ"/>
-                            <constraint firstItem="E3g-sd-lQ4" firstAttribute="top" secondItem="3Re-uh-rQp" secondAttribute="top" id="ncZ-vg-0zB"/>
+                            <constraint firstItem="3Re-uh-rQp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BEJ-VQ-H8M"/>
+                            <constraint firstItem="3Re-uh-rQp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BZZ-v1-2Gh"/>
+                            <constraint firstItem="3Re-uh-rQp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hHb-rk-Rw1"/>
+                            <constraint firstItem="3Re-uh-rQp" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="jkR-Nj-g7A"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tem-4F-O0i"/>
                     <connections>
-                        <outlet property="activityIndicatorView" destination="E3g-sd-lQ4" id="kwP-b4-OZq"/>
                         <outlet property="nasaItemTableview" destination="3Re-uh-rQp" id="Tmz-8J-ESe"/>
                     </connections>
                 </viewController>

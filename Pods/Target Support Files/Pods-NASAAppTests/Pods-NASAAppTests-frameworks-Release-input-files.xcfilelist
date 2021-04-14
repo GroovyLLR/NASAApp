@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-NASAAppTests/Pods-NASAAppTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/RxCocoa-iOS14.1/RxCocoa.framework
+${BUILT_PRODUCTS_DIR}/RxRelay-iOS14.1/RxRelay.framework
+${BUILT_PRODUCTS_DIR}/RxSwift-iOS14.1/RxSwift.framework
