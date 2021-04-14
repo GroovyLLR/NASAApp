@@ -125,7 +125,7 @@ extension NASAItemListViewController {
         setUpNavBar()
         setUpNasaItemTableView()
         setUpAcitivityIndicatorView()
-        view.layoutIfNeeded()
+        
     }
     
     private func setUpNasaItemTableView(){
@@ -143,6 +143,7 @@ extension NASAItemListViewController {
         activityIndicatorView.heightAnchor.constraint(equalToConstant: 35).isActive = true
         activityIndicatorView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -((UIApplication.shared.delegate as? AppDelegate)?.window?.safeAreaInsets.top ?? 0)).isActive = true
         activityIndicatorView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        activityIndicatorView.layoutIfNeeded()
     }
     
     private func setUpNavBar(){
