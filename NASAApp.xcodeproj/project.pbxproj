@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41B4CEDD26244733008661FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4CEDC26244733008661FE /* AppDelegate.swift */; };
+		41B4CEE426244733008661FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B4CEE226244733008661FE /* Main.storyboard */; };
+		41B4CEE626244734008661FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41B4CEE526244734008661FE /* Assets.xcassets */; };
+		41B4CEE926244734008661FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41B4CEE726244734008661FE /* LaunchScreen.storyboard */; };
+		41B4CF0D262460EE008661FE /* NasaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4CF0C262460EE008661FE /* NasaItem.swift */; };
+		41B4CF12262463B5008661FE /* NasaItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4CF11262463B5008661FE /* NasaItemService.swift */; };
+		41B4CF1F262476F7008661FE /* NasaAppEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4CF1E262476F7008661FE /* NasaAppEndpoints.swift */; };
+		41B4CF2D26247916008661FE /* NASAappEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4CF2C26247916008661FE /* NASAappEnums.swift */; };
+		41B4CF3226247BEE008661FE /* NASAItemServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B4CF3126247BEE008661FE /* NASAItemServiceProtocol.swift */; };
+		41F67F4C2625829D00D6A4C1 /* NASAItemListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F67F4B2625829D00D6A4C1 /* NASAItemListViewController.swift */; };
+		41F67F542625877800D6A4C1 /* NASAItemListViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F67F532625877800D6A4C1 /* NASAItemListViewControllerViewModel.swift */; };
+		41F67F61262592C600D6A4C1 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F67F60262592C600D6A4C1 /* UIColor+Extension.swift */; };
+		41F67F66262595AA00D6A4C1 /* NASAItemListViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F67F64262595AA00D6A4C1 /* NASAItemListViewControllerTableViewCell.swift */; };
+		41F67F67262595AA00D6A4C1 /* NASAItemListViewControllerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41F67F65262595AA00D6A4C1 /* NASAItemListViewControllerTableViewCell.xib */; };
+		41F67F6C262597BF00D6A4C1 /* NASAItemListViewControllerTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F67F6B262597BF00D6A4C1 /* NASAItemListViewControllerTableViewCellViewModel.swift */; };
+		41F67F7026259A5B00D6A4C1 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F67F6F26259A5B00D6A4C1 /* Date+Extension.swift */; };
+		41F67F812625BEB500D6A4C1 /* NASAItemsManageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F67F802625BEB500D6A4C1 /* NASAItemsManageable.swift */; };
+		41F67F852625BFD400D6A4C1 /* APiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F67F842625BFD400D6A4C1 /* APiManager.swift */; };
+		41F67F8D2625DC9900D6A4C1 /* NASAItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F67F8C2625DC9900D6A4C1 /* NASAItemDetailViewController.swift */; };
+		41F67F9C2625F17200D6A4C1 /* NASAItemDetailViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F67F9B2625F17200D6A4C1 /* NASAItemDetailViewControllerViewModel.swift */; };
+		41F67FA22626155B00D6A4C1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F67FA12626155B00D6A4C1 /* UIViewController+Extension.swift */; };
+		41F67FA626261B4C00D6A4C1 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F67FA526261B4C00D6A4C1 /* AppRouter.swift */; };
+		41F67FAA26261BAF00D6A4C1 /* NASAItemViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F67FA926261BAF00D6A4C1 /* NASAItemViewModelProtocol.swift */; };
+		41F67FAD26263C5700D6A4C1 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F67FAC26263C5700D6A4C1 /* UILabel+Extension.swift */; };
+		41F67FB126265E4400D6A4C1 /* LoadMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F67FB026265E4400D6A4C1 /* LoadMoreView.swift */; };
+		41F67FB626266F8B00D6A4C1 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F67FB526266F8B00D6A4C1 /* CustomImageView.swift */; };
+		41F67FBD2626725600D6A4C1 /* OfflineImageCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F67FBC2626725600D6A4C1 /* OfflineImageCacher.swift */; };
+		41F67FC126267C7500D6A4C1 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F67FC026267C7500D6A4C1 /* StyleGuide.swift */; };
+		E46F1CDD9FE2E41602E1D455 /* Pods_NASAApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82F07D6C6FA39D9A28597E5F /* Pods_NASAApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E3306C41A30750315B32083 /* Pods-NASAApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAApp.debug.xcconfig"; path = "Target Support Files/Pods-NASAApp/Pods-NASAApp.debug.xcconfig"; sourceTree = "<group>"; };
+		41B4CED926244733008661FE /* NASAApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NASAApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B4CEDC26244733008661FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41B4CEE326244733008661FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41B4CEE526244734008661FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41B4CEE826244734008661FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41B4CEEA26244734008661FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41B4CF0C262460EE008661FE /* NasaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaItem.swift; sourceTree = "<group>"; };
+		41B4CF11262463B5008661FE /* NasaItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaItemService.swift; sourceTree = "<group>"; };
+		41B4CF1E262476F7008661FE /* NasaAppEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaAppEndpoints.swift; sourceTree = "<group>"; };
+		41B4CF2C26247916008661FE /* NASAappEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAappEnums.swift; sourceTree = "<group>"; };
+		41B4CF3126247BEE008661FE /* NASAItemServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAItemServiceProtocol.swift; sourceTree = "<group>"; };
+		41F67F4B2625829D00D6A4C1 /* NASAItemListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAItemListViewController.swift; sourceTree = "<group>"; };
+		41F67F532625877800D6A4C1 /* NASAItemListViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAItemListViewControllerViewModel.swift; sourceTree = "<group>"; };
+		41F67F60262592C600D6A4C1 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		41F67F64262595AA00D6A4C1 /* NASAItemListViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAItemListViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		41F67F65262595AA00D6A4C1 /* NASAItemListViewControllerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NASAItemListViewControllerTableViewCell.xib; sourceTree = "<group>"; };
+		41F67F6B262597BF00D6A4C1 /* NASAItemListViewControllerTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAItemListViewControllerTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		41F67F6F26259A5B00D6A4C1 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		41F67F802625BEB500D6A4C1 /* NASAItemsManageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAItemsManageable.swift; sourceTree = "<group>"; };
+		41F67F842625BFD400D6A4C1 /* APiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APiManager.swift; sourceTree = "<group>"; };
+		41F67F8C2625DC9900D6A4C1 /* NASAItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAItemDetailViewController.swift; sourceTree = "<group>"; };
+		41F67F9B2625F17200D6A4C1 /* NASAItemDetailViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAItemDetailViewControllerViewModel.swift; sourceTree = "<group>"; };
+		41F67FA12626155B00D6A4C1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		41F67FA526261B4C00D6A4C1 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		41F67FA926261BAF00D6A4C1 /* NASAItemViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAItemViewModelProtocol.swift; sourceTree = "<group>"; };
+		41F67FAC26263C5700D6A4C1 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		41F67FB026265E4400D6A4C1 /* LoadMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMoreView.swift; sourceTree = "<group>"; };
+		41F67FB526266F8B00D6A4C1 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		41F67FBC2626725600D6A4C1 /* OfflineImageCacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineImageCacher.swift; sourceTree = "<group>"; };
+		41F67FC026267C7500D6A4C1 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
+		82F07D6C6FA39D9A28597E5F /* Pods_NASAApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NASAApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F95C5ADA4E7414548A168DBB /* Pods-NASAApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASAApp.release.xcconfig"; path = "Target Support Files/Pods-NASAApp/Pods-NASAApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41B4CED626244733008661FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46F1CDD9FE2E41602E1D455 /* Pods_NASAApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A19C064C550F882B495E3FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82F07D6C6FA39D9A28597E5F /* Pods_NASAApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		41B4CED026244733008661FE = {
+			isa = PBXGroup;
+			children = (
+				41B4CEDB26244733008661FE /* NASAApp */,
+				41B4CEDA26244733008661FE /* Products */,
+				60ACC0F7B53B53E6E09788A0 /* Pods */,
+				1A19C064C550F882B495E3FC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		41B4CEDA26244733008661FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41B4CED926244733008661FE /* NASAApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41B4CEDB26244733008661FE /* NASAApp */ = {
+			isa = PBXGroup;
+			children = (
+				41F67FBF26267C6400D6A4C1 /* STYLEGUIDE */,
+				41F67FAF26265E2B00D6A4C1 /* CustomClass */,
+				41F67FA426261B3A00D6A4C1 /* APPRouter */,
+				41B4CEF3262447F5008661FE /* APPDELEGATE */,
+				41B4CF3026247BCF008661FE /* PROTOCOLS */,
+				41B4CF27262477A1008661FE /* ENUMS */,
+				41B4CF1526246903008661FE /* EXTENSIONS */,
+				41B4CF102624639E008661FE /* SERVICES */,
+				41B4CF0B262460D8008661FE /* MODELS */,
+				41B4CEF62624480C008661FE /* RESOURCES */,
+				41B4CEF526244802008661FE /* STORYBOARD */,
+				41B4CEF4262447FC008661FE /* SCREENS */,
+				41B4CEEA26244734008661FE /* Info.plist */,
+			);
+			path = NASAApp;
+			sourceTree = "<group>";
+		};
+		41B4CEF3262447F5008661FE /* APPDELEGATE */ = {
+			isa = PBXGroup;
+			children = (
+				41B4CEDC26244733008661FE /* AppDelegate.swift */,
+			);
+			path = APPDELEGATE;
+			sourceTree = "<group>";
+		};
+		41B4CEF4262447FC008661FE /* SCREENS */ = {
+			isa = PBXGroup;
+			children = (
+				41F67F8A2625DC5B00D6A4C1 /* NASAItemDetailViewScreen */,
+				41B4CF0A2624600E008661FE /* NASAItemListViewScreen */,
+			);
+			path = SCREENS;
+			sourceTree = "<group>";
+		};
+		41B4CEF526244802008661FE /* STORYBOARD */ = {
+			isa = PBXGroup;
+			children = (
+				41B4CEE226244733008661FE /* Main.storyboard */,
+				41B4CEE726244734008661FE /* LaunchScreen.storyboard */,
+			);
+			path = STORYBOARD;
+			sourceTree = "<group>";
+		};
+		41B4CEF62624480C008661FE /* RESOURCES */ = {
+			isa = PBXGroup;
+			children = (
+				41B4CEE526244734008661FE /* Assets.xcassets */,
+			);
+			path = RESOURCES;
+			sourceTree = "<group>";
+		};
+		41B4CF0A2624600E008661FE /* NASAItemListViewScreen */ = {
+			isa = PBXGroup;
+			children = (
+				41F67F632625957100D6A4C1 /* TableViewCell */,
+				41F67F522625875D00D6A4C1 /* ViewModel */,
+				41F67F512625874600D6A4C1 /* ViewController */,
+			);
+			path = NASAItemListViewScreen;
+			sourceTree = "<group>";
+		};
+		41B4CF0B262460D8008661FE /* MODELS */ = {
+			isa = PBXGroup;
+			children = (
+				41B4CF0C262460EE008661FE /* NasaItem.swift */,
+			);
+			path = MODELS;
+			sourceTree = "<group>";
+		};
+		41B4CF102624639E008661FE /* SERVICES */ = {
+			isa = PBXGroup;
+			children = (
+				41F67F842625BFD400D6A4C1 /* APiManager.swift */,
+				41B4CF11262463B5008661FE /* NasaItemService.swift */,
+				41B4CF1D262476E3008661FE /* Endpoints */,
+			);
+			path = SERVICES;
+			sourceTree = "<group>";
+		};
+		41B4CF1526246903008661FE /* EXTENSIONS */ = {
+			isa = PBXGroup;
+			children = (
+				41F67F60262592C600D6A4C1 /* UIColor+Extension.swift */,
+				41F67F6F26259A5B00D6A4C1 /* Date+Extension.swift */,
+				41F67FA12626155B00D6A4C1 /* UIViewController+Extension.swift */,
+				41F67FAC26263C5700D6A4C1 /* UILabel+Extension.swift */,
+			);
+			path = EXTENSIONS;
+			sourceTree = "<group>";
+		};
+		41B4CF1D262476E3008661FE /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				41B4CF1E262476F7008661FE /* NasaAppEndpoints.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		41B4CF27262477A1008661FE /* ENUMS */ = {
+			isa = PBXGroup;
+			children = (
+				41B4CF2C26247916008661FE /* NASAappEnums.swift */,
+			);
+			path = ENUMS;
+			sourceTree = "<group>";
+		};
+		41B4CF3026247BCF008661FE /* PROTOCOLS */ = {
+			isa = PBXGroup;
+			children = (
+				41B4CF3126247BEE008661FE /* NASAItemServiceProtocol.swift */,
+				41F67F802625BEB500D6A4C1 /* NASAItemsManageable.swift */,
+				41F67FA926261BAF00D6A4C1 /* NASAItemViewModelProtocol.swift */,
+			);
+			path = PROTOCOLS;
+			sourceTree = "<group>";
+		};
+		41F67F512625874600D6A4C1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41F67F4B2625829D00D6A4C1 /* NASAItemListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41F67F522625875D00D6A4C1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				41F67F532625877800D6A4C1 /* NASAItemListViewControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		41F67F632625957100D6A4C1 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				41F67F64262595AA00D6A4C1 /* NASAItemListViewControllerTableViewCell.swift */,
+				41F67F65262595AA00D6A4C1 /* NASAItemListViewControllerTableViewCell.xib */,
+				41F67F6B262597BF00D6A4C1 /* NASAItemListViewControllerTableViewCellViewModel.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		41F67F8A2625DC5B00D6A4C1 /* NASAItemDetailViewScreen */ = {
+			isa = PBXGroup;
+			children = (
+				41F67F912625E93700D6A4C1 /* ViewModel */,
+				41F67F8B2625DC7A00D6A4C1 /* ViewController */,
+			);
+			path = NASAItemDetailViewScreen;
+			sourceTree = "<group>";
+		};
+		41F67F8B2625DC7A00D6A4C1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41F67F8C2625DC9900D6A4C1 /* NASAItemDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41F67F912625E93700D6A4C1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				41F67F9B2625F17200D6A4C1 /* NASAItemDetailViewControllerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		41F67FA426261B3A00D6A4C1 /* APPRouter */ = {
+			isa = PBXGroup;
+			children = (
+				41F67FA526261B4C00D6A4C1 /* AppRouter.swift */,
+			);
+			path = APPRouter;
+			sourceTree = "<group>";
+		};
+		41F67FAF26265E2B00D6A4C1 /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				41F67FBB2626724300D6A4C1 /* Utilities */,
+				41F67FBA2626723C00D6A4C1 /* UIClasses */,
+				41F67FB026265E4400D6A4C1 /* LoadMoreView.swift */,
+				41F67FB526266F8B00D6A4C1 /* CustomImageView.swift */,
+			);
+			path = CustomClass;
+			sourceTree = "<group>";
+		};
+		41F67FBA2626723C00D6A4C1 /* UIClasses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIClasses;
+			sourceTree = "<group>";
+		};
+		41F67FBB2626724300D6A4C1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				41F67FBC2626725600D6A4C1 /* OfflineImageCacher.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		41F67FBF26267C6400D6A4C1 /* STYLEGUIDE */ = {
+			isa = PBXGroup;
+			children = (
+				41F67FC026267C7500D6A4C1 /* StyleGuide.swift */,
+			);
+			path = STYLEGUIDE;
+			sourceTree = "<group>";
+		};
+		60ACC0F7B53B53E6E09788A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E3306C41A30750315B32083 /* Pods-NASAApp.debug.xcconfig */,
+				F95C5ADA4E7414548A168DBB /* Pods-NASAApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41B4CED826244733008661FE /* NASAApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41B4CEED26244734008661FE /* Build configuration list for PBXNativeTarget "NASAApp" */;
+			buildPhases = (
+				2F501D096517412B029DCC41 /* [CP] Check Pods Manifest.lock */,
+				41B4CED526244733008661FE /* Sources */,
+				41B4CED626244733008661FE /* Frameworks */,
+				41B4CED726244733008661FE /* Resources */,
+				5D82D1F99F123E35522D9A89 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NASAApp;
+			productName = NASAApp;
+			productReference = 41B4CED926244733008661FE /* NASAApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41B4CED126244733008661FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					41B4CED826244733008661FE = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 41B4CED426244733008661FE /* Build configuration list for PBXProject "NASAApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41B4CED026244733008661FE;
+			productRefGroup = 41B4CEDA26244733008661FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41B4CED826244733008661FE /* NASAApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41B4CED726244733008661FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41F67F67262595AA00D6A4C1 /* NASAItemListViewControllerTableViewCell.xib in Resources */,
+				41B4CEE926244734008661FE /* LaunchScreen.storyboard in Resources */,
+				41B4CEE626244734008661FE /* Assets.xcassets in Resources */,
+				41B4CEE426244733008661FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F501D096517412B029DCC41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NASAApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D82D1F99F123E35522D9A89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NASAApp/Pods-NASAApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NASAApp/Pods-NASAApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NASAApp/Pods-NASAApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41B4CED526244733008661FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41F67F852625BFD400D6A4C1 /* APiManager.swift in Sources */,
+				41F67FB626266F8B00D6A4C1 /* CustomImageView.swift in Sources */,
+				41F67FC126267C7500D6A4C1 /* StyleGuide.swift in Sources */,
+				41F67F9C2625F17200D6A4C1 /* NASAItemDetailViewControllerViewModel.swift in Sources */,
+				41F67F8D2625DC9900D6A4C1 /* NASAItemDetailViewController.swift in Sources */,
+				41B4CF1F262476F7008661FE /* NasaAppEndpoints.swift in Sources */,
+				41B4CF0D262460EE008661FE /* NasaItem.swift in Sources */,
+				41F67F812625BEB500D6A4C1 /* NASAItemsManageable.swift in Sources */,
+				41F67F61262592C600D6A4C1 /* UIColor+Extension.swift in Sources */,
+				41F67FA626261B4C00D6A4C1 /* AppRouter.swift in Sources */,
+				41F67FBD2626725600D6A4C1 /* OfflineImageCacher.swift in Sources */,
+				41F67F7026259A5B00D6A4C1 /* Date+Extension.swift in Sources */,
+				41B4CEDD26244733008661FE /* AppDelegate.swift in Sources */,
+				41F67FA22626155B00D6A4C1 /* UIViewController+Extension.swift in Sources */,
+				41B4CF12262463B5008661FE /* NasaItemService.swift in Sources */,
+				41B4CF2D26247916008661FE /* NASAappEnums.swift in Sources */,
+				41F67FB126265E4400D6A4C1 /* LoadMoreView.swift in Sources */,
+				41F67FAD26263C5700D6A4C1 /* UILabel+Extension.swift in Sources */,
+				41F67F4C2625829D00D6A4C1 /* NASAItemListViewController.swift in Sources */,
+				41F67FAA26261BAF00D6A4C1 /* NASAItemViewModelProtocol.swift in Sources */,
+				41B4CF3226247BEE008661FE /* NASAItemServiceProtocol.swift in Sources */,
+				41F67F542625877800D6A4C1 /* NASAItemListViewControllerViewModel.swift in Sources */,
+				41F67F66262595AA00D6A4C1 /* NASAItemListViewControllerTableViewCell.swift in Sources */,
+				41F67F6C262597BF00D6A4C1 /* NASAItemListViewControllerTableViewCellViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		41B4CEE226244733008661FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41B4CEE326244733008661FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		41B4CEE726244734008661FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41B4CEE826244734008661FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41B4CEEB26244734008661FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41B4CEEC26244734008661FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41B4CEEE26244734008661FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E3306C41A30750315B32083 /* Pods-NASAApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FAYEZUN5CX;
+				INFOPLIST_FILE = NASAApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobimove.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		41B4CEEF26244734008661FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F95C5ADA4E7414548A168DBB /* Pods-NASAApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FAYEZUN5CX;
+				INFOPLIST_FILE = NASAApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobimove.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41B4CED426244733008661FE /* Build configuration list for PBXProject "NASAApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41B4CEEB26244734008661FE /* Debug */,
+				41B4CEEC26244734008661FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41B4CEED26244734008661FE /* Build configuration list for PBXNativeTarget "NASAApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41B4CEEE26244734008661FE /* Debug */,
+				41B4CEEF26244734008661FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41B4CED126244733008661FE /* Project object */;
+}
