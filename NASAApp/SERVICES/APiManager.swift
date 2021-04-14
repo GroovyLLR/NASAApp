@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+///Class with contains base functions for perform urlsession request and return appropriate response (success/failure)
 class APiManager {
     
     

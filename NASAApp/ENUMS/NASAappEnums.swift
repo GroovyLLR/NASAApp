@@ -7,6 +7,7 @@
 
 import Foundation
 
+///Enums shared thoughout the application
 
 enum RequestType: String {
     case get     = "GET"

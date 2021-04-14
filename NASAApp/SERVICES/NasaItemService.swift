@@ -8,6 +8,8 @@
 import Foundation
 import RxSwift
 
+///Class that conforms to the NasaItemServiceProtocol
+
 class NasaItemService: NasaItemServiceProtocol {
     
     /// Fetches the list of NasaItems
@@ -32,7 +34,7 @@ class NasaItemService: NasaItemServiceProtocol {
         }
     }
     
-    
+    ///Fetch Image urls item
     func fetchImageCollection(ForItem item: NasaItem, success: @escaping (_ url: String) -> (), failure: @escaping (_ error: APiManager.ApiError) -> ()){
         
         guard let url = item.imageCollectionUrl else {

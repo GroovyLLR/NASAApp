@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+///Single with a custom URLCache object initialize against a folder directory
 class OfflineImageCacher {
     
     static let instance = OfflineImageCacher()

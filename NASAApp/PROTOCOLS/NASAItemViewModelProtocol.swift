@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+///Protocol for ViewModel conforming to NasaItem Object
 protocol NASAItemViewModelProtocol {
     
     var nasaItem: NasaItem! {set get}

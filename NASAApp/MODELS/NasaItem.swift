@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+///class contains Codable object use to map response for fecthItem into appropriate objects
 class NasaItem: Codable {
     
     var nasa_id: String?

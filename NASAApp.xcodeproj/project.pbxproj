@@ -344,8 +344,6 @@
 			children = (
 				41F67FBB2626724300D6A4C1 /* Utilities */,
 				41F67FBA2626723C00D6A4C1 /* UIClasses */,
-				41F67FB026265E4400D6A4C1 /* LoadMoreView.swift */,
-				41F67FB526266F8B00D6A4C1 /* CustomImageView.swift */,
 			);
 			path = CustomClass;
 			sourceTree = "<group>";
@@ -353,6 +351,8 @@
 		41F67FBA2626723C00D6A4C1 /* UIClasses */ = {
 			isa = PBXGroup;
 			children = (
+				41F67FB026265E4400D6A4C1 /* LoadMoreView.swift */,
+				41F67FB526266F8B00D6A4C1 /* CustomImageView.swift */,
 			);
 			path = UIClasses;
 			sourceTree = "<group>";

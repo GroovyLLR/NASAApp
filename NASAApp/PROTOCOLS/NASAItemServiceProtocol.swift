@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-
+///Protocol to NasaItems request (fetchItem, fetch large image from collection url)
 protocol NasaItemServiceProtocol {
     
     func fetchNasaItems(NextUrl nextUrl: String?,

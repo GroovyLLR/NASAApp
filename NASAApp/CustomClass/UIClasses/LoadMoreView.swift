@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+///a simple loadmore view using uiactivityIndicatorview
 class LoadMoreView {
 
     private let spacingFromLastCell: CGFloat

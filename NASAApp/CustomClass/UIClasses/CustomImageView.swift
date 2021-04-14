@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 import RxSwift
 
+
+///UIImageView subclass which enable downloading image from url and work together with OfflineImageCacher
 class CustomImageView: UIImageView {
     
     var url: String?

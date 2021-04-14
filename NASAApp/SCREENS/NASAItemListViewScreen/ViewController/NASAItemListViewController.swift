@@ -129,7 +129,6 @@ extension NASAItemListViewController {
     }
     
     private func setUpNasaItemTableView(){
-        nasaItemTableview.backgroundColor = StyleGuide.getNavBarBackgroundColor()
         nasaItemTableview.register(UINib.init(nibName: NASAItemListViewControllerTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: NASAItemListViewControllerTableViewCell.identifier)
         nasaItemTableview.separatorStyle = .none
         nasaItemTableview.estimatedRowHeight = 64

@@ -8,6 +8,8 @@
 import Foundation
 import  UIKit
 
+
+///A simple class to manage routing throughout the application
 class AppRouter {
     
     static func showNasaItemDetailViewController(NavigationController nav: UINavigationController,

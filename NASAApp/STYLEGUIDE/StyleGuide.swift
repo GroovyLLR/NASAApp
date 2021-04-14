@@ -8,6 +8,7 @@
 import Foundation
 import  UIKit
 
+///provide generic function the access fonts and color used throughout the application
 class StyleGuide {
     
     static func getHelveticaNeueWithSize(_ size: CGFloat) -> UIFont {

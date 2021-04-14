@@ -8,6 +8,8 @@
 import Foundation
 import RxSwift
 
+
+///Protocol for ViewModel managing NasaItems
 protocol NASAItemsManageable  {
     
     var nasaItems: PublishSubject<[NASAItemListViewControllerTableViewCellViewModel]> {get set}

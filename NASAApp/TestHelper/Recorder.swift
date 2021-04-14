@@ -8,6 +8,7 @@
 import Foundation
 import RxSwift
 
+/// Used for testing PublishSubjects from ViewModel
 class Recorder<T> {
     var items = [T]()
     let bag = DisposeBag()
