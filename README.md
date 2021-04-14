@@ -4,6 +4,11 @@
 
 The project is base on MVVM architecture using RxSwift frameworks
 
+## Project Setup
+
+  - Go to project directory from terminal
+  - Run Command : pod install
+
 ## Project Structure
 
 1. TestHelper/Recoder
